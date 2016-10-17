@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 //            holder.item.setText("" + position);
             holder.item.setCardColor(randomColor());
             holder.text.setText("菜单" + position);
-            holder.itemView.setOnClickListener(new View.OnClickListener() {
+            holder.item.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Toast.makeText(MainActivity.this, holder.text.getText(), Toast.LENGTH_SHORT).show();
