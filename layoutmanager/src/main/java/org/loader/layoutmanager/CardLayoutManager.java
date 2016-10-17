@@ -91,17 +91,17 @@ public class CardLayoutManager extends RecyclerView.LayoutManager {
                 getHorizontalSpace() + mHorizontalOffset,
                 getVerticalSpace() + mVerticalOffset);
 
-        Rect rect = new Rect();
-        for (int i = 0; i < getChildCount(); i++) {
-            View item = getChildAt(i);
-            rect.left = getDecoratedLeft(item);
-            rect.top = getDecoratedTop(item);
-            rect.right = getDecoratedRight(item);
-            rect.bottom = getDecoratedBottom(item);
-            if (!Rect.intersects(displayRect, rect)) {
-                removeAndRecycleView(item, recycler);
-            }
-        }
+        // Rect rect = new Rect();
+        // for (int i = 0; i < getChildCount(); i++) {
+            // View item = getChildAt(i);
+            // rect.left = getDecoratedLeft(item);
+            // rect.top = getDecoratedTop(item);
+            // rect.right = getDecoratedRight(item);
+            // rect.bottom = getDecoratedBottom(item);
+            // if (!Rect.intersects(displayRect, rect)) {
+                // removeAndRecycleView(item, recycler);
+            // }
+        // }
 
         for (int i = 0; i < getItemCount(); i++) {
             Rect frame = mItemFrames.get(i);
