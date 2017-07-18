@@ -1,4 +1,4 @@
 # CardLayoutManager
 RecyclerView自定义LayoutManager
 
-![] (./1.gif)
+![](./1.gif)
